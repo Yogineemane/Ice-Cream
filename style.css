@@ -1,0 +1,198 @@
+/* https://images.pexels.com/photos/8380252/pexels-photo-8380252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 */
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgba(58, 27, 32, 0.73);
+    color: pink;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(58, 27, 32, 0.73);
+    color: pink;   
+}
+nav h1{
+     font-size: 3rem;
+     font-family: monospace;
+     letter-spacing: 0.8rem;
+     font-weight: 500;
+     color: pink;
+}
+a{
+    color: pink;
+    font-size: 2rem;
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: 2s ease-in;
+}
+a:hover{
+    color: #3d2614;
+}
+#hero{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url('https://images.pexels.com/photos/8380252/pexels-photo-8380252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') ;
+    background-position: center;
+    background-size: cover;
+}
+#hero h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    color:pink;
+    background-color: rgba(132, 42, 165, 0.433);
+    padding: 1rem;
+    border-radius: 0.7rem;
+    font-family: monospace;
+    transition: 2s ease-in; 
+}
+#hero h1:hover{
+    box-shadow:0.5rem 0.5rem 0.5rem #3d2614;
+}
+span{
+    color: #3d2614;
+    letter-spacing: 0.8rem ;    
+}
+#About{
+    height: 100vh;
+    display: flex;
+}
+#About .left, .right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-img{
+    width: 20rem;
+    border-radius: 0.8rem;
+    transition: 1.5s ease-out;
+}
+.about-img:hover{
+    box-shadow:0.5rem 0.5rem 0.5rem #3d2614;
+}
+#About.right h1{
+    font-size: 3rem;
+    font-family: monospace;
+    letter-spacing: 0.8rem;
+    font-weight: 500;  
+}
+p{
+    font-size: 1.8rem;
+}
+#Ice-Creams{
+    /* height: 100vh; */
+    margin: 2rem 0;
+    display: flex; 
+    flex-direction: column;
+    background: linear-gradient(to right,pink,#906406,#906406);
+}
+
+#Ice-Creams h1{
+    font-size: 3rem;
+    font-family: monospace;
+    letter-spacing: 0.8rem;
+    font-weight: 500; 
+    text-align: center;
+    margin: 1rem 0;
+    color: #3d2614;
+}
+.lower{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+h2{
+    color: #906406;
+}
+
+.card{
+    width: 20rem;
+    background-color: rgb(59, 27, 4);
+    border-radius: 0.2rem;
+    padding: 0.4rem;
+    margin: 1rem;
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 0.8rem;
+}
+
+#Contact{
+    height: 100vh;
+    display: flex;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+
+#Contact .left,.right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe{
+    width: 100%; 
+    height: 100%;
+    border-radius: 0.8rem;
+    padding: 1rem;
+}
+
+form{
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+}
+input,textarea{
+    background-color: #3d2614;
+    color: pink;
+    padding: 1rem 4rem;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+.btn{
+    transition: 1.5s;
+}
+.btn:hover{
+    background: linear-gradient(to right,pink,#906406,#906406);
+}
+@media screen and (max-width:670px) {
+    nav h1{
+        font-size: 1.8rem;
+    }
+    .nav-right{
+        display: none;
+    }
+    #hero{
+       height: 100%; 
+    }
+    #hero h1{
+        font-size: 1.4rem;
+        width: 20rem;
+    }
+    #About{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #About .left,.right{
+        width: 100%;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+}
